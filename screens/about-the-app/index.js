@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Text, StyleSheet, View, SafeAreaView, Image } from "react-native";
+import { StyleSheet, View, SafeAreaView, Image } from "react-native";
 
 const AboutTheAppScreen = params => {
   const [ImageSource, setImageSource] = useState();
@@ -15,10 +15,7 @@ const AboutTheAppScreen = params => {
         <Image source={ImageSource} />
         <Image style={styles.threeDots} source={require("./assets/3Dots.png")} />
       </View>
-      <View style={styles.textContainer}>
-        <Text style={styles.text}>{text1}</Text>
-        <Text style={styles.text}>{text2}</Text>
-      </View>
+      
     </SafeAreaView>;
 };
 
